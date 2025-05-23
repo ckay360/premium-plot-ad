@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Plot for Sale</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .ad-container {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .ad-container:hover {
+      transform: translateY(-6px);
+    }
+
+    .urgent-badge {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background: #e74c3c;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0.6; }
+    }
+
+    .land-icon {
+      font-size: 64px;
+      margin-bottom: 15px;
+      color: #2c5364;
+    }
+
+    .title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+
+    .location {
+      background: #17a2b8;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .features {
+      background: #f8f9fa;
+      border-left: 4px solid #2c5364;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 25px 0;
+    }
+
+    .features h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #495057;
+    }
+
+    .features li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-section p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    .phone-number {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px 25px;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .phone-number:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .ad-container {
+        padding: 25px;
+      }
+
+      .title {
+        font-size: 1.8rem;
+      }
+
+      .phone-number {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-container">
+    <div class="urgent-badge">HOT DEAL</div>
+    <div class="land-icon">🏞️</div>
+    <h1 class="title">PREMIUM PLOT</h1>
+    <p class="subtitle">Available for SALE • LEASE • RENT</p>
+
+    <div class="location">📍 TSE ADDO, OPPOSIE VISION SEED SCHOOL</div>
+
+    <div class="features">
+      <h3>🎯 Investment Highlights</h3>
+      <ul>
+        <li>Flexible options: purchase, lease, or rental</li>
+        <li>Prime location with excellent road access</li>
+        <li>Clean land title and full documentation</li>
+        <li>Ideal for residential or commercial use</li>
+        <li>Rapidly developing neighborhood</li>
+        <li>Ready for immediate development</li>
+      </ul>
+    </div>
+
+    <div class="contact-section">
+      <p>💰 Multiple Options Available</p>
+      <p>📞 For Pricing & Site Viewing:</p>
+      <div class="phone-number" onclick="window.location.href='tel:0596011280'">
+        0596011280
+      </div>
+      <p>📱 Call now for exclusive offers!</p>
+    </div>
+  </div>
+</body>
+</html>
